@@ -1,0 +1,17 @@
+A4:
+-Zeitvektor vorgeben t=ta:dt:te	dt=0.001
+-Signaleingabe mit sigma()	(Punkt-Operatoren verwenden!)
+-Bei Energieberechnung Integration durch dt*sum(s²)
+-Darstellung mit subplot(3,1,n) und plot(t,s,'linewidth',2)
+
+A5:
+-symmetrischer Zeitvektor t = -te:dt:te
+-Signal mit sigma() eingeben
+-Korrelation durch Faltung berechnen phi = dt*conv(s1,s2)
+Achtung: S1 vor der Faltung spiegeln, da Energie s1s2 = s1(-t) *(Faltung) s2(t)
+	-> Signal mit fliplr() spiegeln
+-zusätzlich Zeitachse erzeugen für Darstellung von phi (phi hat die doppelte der Signale -1)	t1 = -2dte:dt:2te
+-Darstellung von s1(t), s2(t) und phi(t1)
+
+A6+7:
+-analog zu A5, aber ohne Spiegeln
